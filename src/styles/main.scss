@@ -1,0 +1,33 @@
+// В этом файле вы можете импортировать переменные и миксины,
+// а также определять глобальные стили для вашего приложения.
+
+@use './_variables' as *; // Импортируем все переменные
+@use './_mixins' as *;     // Импортируем все миксины
+
+:root {
+    --primary-color: #007bff;
+    --black-color: #333
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
+    background-color: #DFE6F0; // задний фон
+}
+
+.container {
+    width: 70%;
+    margin: auto;  // Центрирование
+    padding: 20px;
+
+    @media (max-width: 1024px) {
+        width: 100%; // Устанавливаем ширину 100% для экранов 1024px и меньше
+    }    
+}
+
+.button {
+    @include flex-center; // Используем миксин для центрирования
+    @include transition(all); // Используем миксин для переходов
+}
