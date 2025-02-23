@@ -6,7 +6,7 @@
 
 .container {
     display: flex;
-    justify-content: space-between; /* Разделяет элементы на логотип, заголовок и кнопки */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -18,25 +18,25 @@
 
 h3 {
     margin: 0;
-    flex-grow: 1; /* Заставляет заголовок занимать оставшееся пространство между логотипом и кнопками */
+    flex-grow: 1;
     text-align: center;
 }
 
-.navbarButtons {
+.navbar {
     display: flex;
-    gap: 20px; /* Расстояние между кнопками */
+    gap: 20px; 
 }
 
-.buttonIcon {
-    padding: 10px;
+.loginButton{
+    padding: 5px;
     border-radius: 4px;
-    height: 50px; /* Высота кнопок */
+    height: 37px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .buttonIcon img {
-    height: 100%; /* Масштабирование иконки по высоте контейнера */
+    height: 100%; 
     width: auto;
 }
